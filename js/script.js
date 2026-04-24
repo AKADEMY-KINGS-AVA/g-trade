@@ -217,7 +217,6 @@ window.addEventListener('DOMContentLoaded', async () => {
     if (currentCryptoPrice && !cryptoStopLossInput.value) {
         const suggestedStopLong = (currentCryptoPrice * 0.97).toFixed(2);
         const suggestedStopShort = (currentCryptoPrice * 1.03).toFixed(2);
-        cryptoStopLossInput.placeholder = 'LONG: ' + suggestedStopLong + ' | SHORT: ' + suggestedStopShort;
     }
 
     // Заполняем forex поля для декора
